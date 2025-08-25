@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rose Software | Official Page</title>
-  <meta name="description" content="Rose Software — game utilities and tooling. Join our Discord for updates and support." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="Rose Software — game utilities and tooling. Join our Discord for updates and support.">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
     :root{
@@ -58,99 +56,98 @@
   </style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <div class="brand"><span class="logo"></span> <span>Rose Software</span></div>
-      <nav>
-        <a href="#products">Ürünler</a>
-        <a href="#pricing">Fiyat</a>
-        <a href="#faq">SSS</a>
-        <a href="#contact" class="btn small">İletişim</a>
-      </nav>
+<header>
+  <div class="container nav">
+    <div class="brand"><span class="logo"></span> <span>Rose Software</span></div>
+    <nav>
+      <a href="#products">Ürünler</a>
+      <a href="#pricing">Fiyat</a>
+      <a href="#faq">SSS</a>
+      <a href="#contact" class="btn small">İletişim</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="hero">
+    <div>
+      <div class="kicker">Resmi Sayfa</div>
+      <h1>Rose Software — Oyun Araçları & Yardımcı Programlar</h1>
+      <p>Kolay kurulum, hızlı destek, düzenli güncellemeler. Topluluğumuza katıl ve en güncel bilgilere eriş.</p>
+      <div class="badges">
+        <span class="badge">Anlık destek</span>
+        <span class="badge">Düzenli güncelleme</span>
+        <span class="badge">Global topluluk</span>
+      </div>
+      <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn primary" href="https://discord.gg/j3f7S7Req8" target="_blank" rel="noopener">Discord'a Katıl</a>
+        <a class="btn" href="#products">Ürünleri Gör</a>
+      </div>
+      <p class="muted" style="margin-top:10px">Durum: <span class="status-dot"></span> Aktif | Son güncelleme: <span id="lastUpdated">—</span></p>
     </div>
-  </header>
-
-  <main class="container">
-    <!-- HERO -->
-    <section class="hero">
-      <div>
-        <div class="kicker">Resmi Sayfa</div>
-        <h1>Rose Software — Oyun Araçları & Yardımcı Programlar</h1>
-        <p>Kolay kurulum, hızlı destek, düzenli güncellemeler. Topluluğumuza katıl ve en güncel bilgilere eriş.</p>
-        <div class="badges">
-          <span class="badge">Anlık destek</span>
-          <span class="badge">Düzenli güncelleme</span>
-          <span class="badge">Global topluluk</span>
-        </div>
-        <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
-          <a class="btn primary" href="https://discord.gg/j3f7S7Req8" target="_blank" rel="noopener">Discord'a Katıl</a>
-          <a class="btn" href="#products">Ürünleri Gör</a>
-        </div>
-        <p class="muted" style="margin-top:10px">Durum: <span class="status-dot"></span> Aktif | Son güncelleme: <span id="lastUpdated">—</span></p>
+    <div class="card">
+      <h3>Duyuru</h3>
+      <p class="muted">Satın alma öncesi lütfen <a href="#tos" class="linkish">Kullanım Koşulları</a>'nı okuyun. Bu sayfa yalnızca bilgi ve topluluk erişimi sağlar.</p>
+      <div class="callout" style="margin-top:10px">
+        <strong>Önemli:</strong> Ürünler üçüncü taraf oyun geliştiricileri ile bağlantılı değildir. Tüm markalar ilgili sahiplerine aittir.
       </div>
-      <div class="card">
-        <h3>Duyuru</h3>
-        <p class="muted">Satın alma öncesi lütfen <a href="#tos" class="linkish">Kullanım Koşulları</a>'nı okuyun. Bu sayfa yalnızca bilgi ve topluluk erişimi sağlar.</p>
-        <div class="callout" style="margin-top:10px">
-          <strong>Önemli:</strong> Ürünler üçüncü taraf oyun geliştiricileri ile bağlantılı değildir. Tüm markalar ilgili sahiplerine aittir.
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section">
-      <h2>Sık Sorulan Sorular</h2>
-      
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          <strong>Kurulum ve destek nasıl işliyor?</strong>
-          <span>▶</span>
-        </div>
-        <div class="faq-a" style="display:none;margin-top:10px" class="muted">
-          Satın alma sonrası kurulum adımları <strong>AnyDesk üzerinden uzaktan destek</strong> ile kolayca gerçekleştirilir. Ekip 7/24 hizmet vererek kurulum sırasında ve sonrasında size rehberlik eder.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          <strong>Güncellemeler ne sıklıkla geliyor?</strong>
-          <span>▶</span>
-        </div>
-        <div class="faq-a" style="display:none;margin-top:10px" class="muted">
-          Güncellemeler <strong>anlık olarak</strong> Discord ve ana sayfa üzerinden duyurulur. Tüm sürümler düzenli olarak kontrol edilir.
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">
-          <strong>İade / değiştirme politikası nedir?</strong>
-          <span>▶</span>
-        </div>
-        <div class="faq-a" style="display:none;margin-top:10px" class="muted">
-          Dijital ürünlerde iade ve değişim koşulları sınırlıdır. Detaylı bilgiler için lütfen <strong>Discord kanalımız</strong> üzerinden rehbere göz atın ve onaylayın.
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="container">
-    <p class="muted">© 2025 Rose Software. Tüm hakları saklıdır.</p>
-    <div class="foot-links">
-      <a href="https://discord.gg/j3f7S7Req8" target="_blank">Discord</a>
-      <a href="#tos">Kullanım Koşulları</a>
     </div>
-  </footer>
+  </section>
 
-  <script>
-    function toggleFaq(el){
-      const a = el.nextElementSibling;
-      if(a.style.display === 'none'){
-        a.style.display = 'block';
-      } else {
-        a.style.display = 'none';
-      }
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <h2>Sık Sorulan Sorular</h2>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <strong>Kurulum ve destek nasıl işliyor?</strong>
+        <span>▶</span>
+      </div>
+      <div class="faq-a" style="display:none;margin-top:10px" class="muted">
+        Satın alma sonrası kurulum adımları <strong>AnyDesk üzerinden uzaktan destek</strong> ile kolayca gerçekleştirilir. Ekip 7/24 hizmet vererek kurulum sırasında ve sonrasında rehberlik eder.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <strong>Güncellemeler ne sıklıkla geliyor?</strong>
+        <span>▶</span>
+      </div>
+      <div class="faq-a" style="display:none;margin-top:10px" class="muted">
+        Güncellemeler <strong>anlık olarak</strong> Discord ve ana sayfa üzerinden duyurulur. Tüm sürümler düzenli olarak kontrol edilir.
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">
+        <strong>İade / değiştirme politikası nedir?</strong>
+        <span>▶</span>
+      </div>
+      <div class="faq-a" style="display:none;margin-top:10px" class="muted">
+        Dijital ürünlerde iade ve değişim koşulları sınırlıdır. Detaylı bilgiler için lütfen <strong>Discord kanalımız</strong> üzerinden rehbere göz atın ve onaylayın.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="container">
+  <p class="muted">© 2025 Rose Software. Tüm hakları saklıdır.</p>
+  <div class="foot-links">
+    <a href="https://discord.gg/j3f7S7Req8" target="_blank">Discord</a>
+    <a href="#tos">Kullanım Koşulları</a>
+  </div>
+</footer>
+
+<script>
+  function toggleFaq(el){
+    const a = el.nextElementSibling;
+    if(a.style.display === 'none'){
+      a.style.display = 'block';
+    } else {
+      a.style.display = 'none';
     }
-  </script>
+  }
+</script>
 </body>
 </html>
