@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rose Software | Official Page</title>
+  <meta name="description" content="Rose Software — game utilities and tooling. Join our Discord for updates and support." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0f14; --card:#0f1620; --muted:#98a2b3; --text:#e6edf3; --rose:#ff3d6e; --rose-2:#ff6b8f; --line:#1e293b; --ok:#22c55e; --warn:#f59e0b;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:linear-gradient(180deg,#0b0f14 0%, #0a0e13 100%);color:var(--text);font-family:Inter,system-ui,Segoe UI,Roboto,Arial,Helvetica,sans-serif}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(11,15,20,.8);backdrop-filter:blur(8px);z-index:10;border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.3px}
+    .logo{width:28px;height:28px;border-radius:10px;background:radial-gradient(60% 60% at 50% 35%, var(--rose) 0%, var(--rose-2) 60%, transparent 61%), #1c2430;border:1px solid #2b3340;box-shadow:0 6px 30px rgba(255,61,110,.25)}
+    .nav a{padding:8px 12px;border-radius:10px;color:var(--muted)}
+    .nav a:hover{background:#0f1620;color:var(--text)}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:12px;border:1px solid #2b3340;background:linear-gradient(180deg,#18202b,#111722);font-weight:600}
+    .btn.primary{border-color:transparent;background:linear-gradient(180deg,var(--rose),#ff1f5a);box-shadow:0 10px 30px rgba(255,61,110,.35)}
+    .btn.small{padding:8px 12px;border-radius:10px;font-size:14px}
+    .hero{padding:64px 0 24px;display:grid;grid-template-columns:1.05fr .95fr;gap:28px}
+    .hero h1{font-size:42px;line-height:1.1;margin:0 0 14px}
+    .hero p{color:var(--muted);margin:0 0 18px}
+    .hero .card{background:linear-gradient(180deg,#0f1620,#0b1017);border:1px solid #1e293b;border-radius:18px;padding:20px}
+    .badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+    .badge{font-size:12px;color:#cbd5e1;background:#0e1520;border:1px solid #223047;border-radius:999px;padding:6px 10px}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    @media(max-width:960px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+    .card{background:linear-gradient(180deg,#0f1620,#0b1017);border:1px solid #1e293b;border-radius:18px;padding:18px}
+    .card h3{margin:0 0 6px;font-size:20px}
+    .muted{color:var(--muted)}
+    .pill{display:inline-flex;align-items:center;gap:8px;background:#0e1520;border:1px solid #223047;border-radius:999px;padding:6px 10px;font-size:12px}
+    .price{font-size:20px;font-weight:600;margin:10px 0}
+    .feat{display:flex;align-items:flex-start;gap:10px;margin:8px 0;color:#cbd5e1}
+    .feat svg{flex:0 0 auto;margin-top:3px}
+    .section{padding:28px 0}
+    .section h2{margin:0 0 12px}
+    .table{width:100%;border-collapse:collapse;border:1px solid #1f2a3a;border-radius:12px;overflow:hidden}
+    .table th,.table td{padding:12px;border-bottom:1px solid #1f2a3a;text-align:left}
+    .table th{background:#0f1620;color:#cbd5e1}
+    .faq-item{border:1px solid #1e293b;border-radius:14px;padding:14px;background:#0f1620;margin-bottom:10px}
+    .faq-q{display:flex;justify-content:space-between;align-items:center;cursor:pointer}
+    .rotate{transform:rotate(90deg)}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:#94a3b8}
+    .kicker{font-size:12px;color:#a3b7d1;text-transform:uppercase;letter-spacing:.12em}
+    .callout{border:1px dashed #334155;border-radius:14px;padding:14px;background:#0e1520;color:#cbd5e1}
+    .status-dot{width:10px;height:10px;border-radius:999px;background:var(--ok);display:inline-block;margin-right:8px}
+    .warn{color:#ffcc80}
+    .linkish{border-bottom:1px dashed #334155}
+    .foot-links{display:flex;gap:14px;flex-wrap:wrap}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand"><span class="logo"></span> <span>Rose Software</span></div>
+      <nav>
+        <a href="#products">Ürünler</a>
+        <a href="#pricing">Fiyat</a>
+        <a href="#faq">SSS</a>
+        <a href="#contact" class="btn small">İletişim</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div>
+        <div class="kicker">Resmi Sayfa</div>
+        <h1>Rose Software — Oyun Araçları & Yardımcı Programlar</h1>
+        <p>Kolay kurulum, hızlı destek, düzenli güncellemeler. Topluluğumuza katıl ve en güncel bilgilere eriş.</p>
+        <div class="badges">
+          <span class="badge">Anlık destek</span>
+          <span class="badge">Düzenli güncelleme</span>
+          <span class="badge">Global topluluk</span>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn primary" href="https://discord.gg/j3f7S7Req8" target="_blank" rel="noopener">Discord'a Katıl</a>
+          <a class="btn" href="#products">Ürünleri Gör</a>
+        </div>
+        <p class="muted" style="margin-top:10px">Durum: <span class="status-dot"></span> Aktif | Son güncelleme: <span id="lastUpdated">—</span></p>
+      </div>
+      <div class="card">
+        <h3>Duyuru</h3>
+        <p class="muted">Satın alma öncesi lütfen <a href="#tos" class="linkish">Kullanım Koşulları</a>'nı okuyun. Bu sayfa yalnızca bilgi ve topluluk erişimi sağlar.</p>
+        <div class="callout" style="margin-top:10px">
+          <strong>Önemli:</strong> Ürünler üçüncü taraf oyun geliştiricileri ile bağlantılı değildir. Tüm markalar ilgili sahiplerine aittir.
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="section">
+      <h2>Ürünler</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="pill">VALORANT</div>
+          <h3>External Tool</h3>
+          <p class="muted">Basit arayüz, düşük riskli mimari, kolay kurulum.</p>
+          <div class="feat">✔ Performans odaklı</div>
+          <div class="feat">✔ Otomatik güncelleme bildirimi</div>
+          <div class="feat">✔ 7/24 topluluk desteği</div>
+          <div class="price">
+            1 Gün: 8$ / 300TL<br>
+            3 Gün: 16$ / 650TL<br>
+            7 Gün: 25$ / 1000TL<br>
+            30 Gün: 50$ / 2000TL<br>
+            Lifetime: 125$ / 5000TL
+          </div>
+          <a class="btn primary" href="https://discord.gg/j3f7S7Req8" target="_blank">Satın Al (Discord)</a>
+        </div>
+        <div class="card">
+          <div class="pill">VALORANT</div>
+          <h3>Internal Tool</h3>
+          <p class="muted">Gelişmiş özellik seti ve yüksek esneklik.</p>
+          <div class="feat">✔ Modüler yapı</div>
+          <div class="feat">✔ Düzenli sürüm notları</div>
+          <div class="feat">✔ Canlı destek erişimi</div>
+          <div class="price">
+            1 Gün: 10$ / 300TL<br>
+            3 Gün: 15$ / 600TL<br>
+            7 Gün: 25$ / 900TL<br>
+            30 Gün: 40$ / 1500TL<br>
+            Lifetime: 80$ / 3000TL
+          </div>
+          <a class="btn primary" href="https://discord.gg/j3f7S7Req8" target="_blank">Satın Al (Discord)</a>
+        </div>
+        <div class="card">
+          <div class="pill">Sistem</div>
+          <h3>HWID Spoofer</h3>
+          <p class="muted">Cihaz kimliğiyle ilgili işlemler için yardımcı araçlar.</p>
+          <div class="feat">✔ Kılavuz ve eğitim içerikleri</div>
+          <div class="feat">✔ Ön kontrol & raporlama</div>
+          <div class="feat">✔ Topluluk geri bildirimleri</div>
+          <div class="price">
+            Onetime: 750TL<br>
+            Lifetime: 2000TL
+          </div>
+          <a class="btn primary" href="https://discord.gg/j3f7S7Req8" target="_blank">Satın Al (Discord)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+      <h2>Fiyatlandırma</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Ürün</th>
+            <th>Plan</th>
+            <th>Fiyat</th>
+            <th>Ödeme</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>VAL External</td>
+            <td>1 / 3 / 7 / 30 Gün, Lifetime</td>
+            <td>8$-125$ | 300TL-5000TL</td>
+            <td>Papara, Havale/EFT, Kredi Kartı</td>
+          </tr>
+          <tr>
+            <td>VAL Internal</td>
+            <td>1 / 3 / 7 / 30 Gün, Lifetime</td>
+            <td>10$-80$ | 300TL-3000TL</td>
+            <td>Papara, Havale/EFT, Kredi Kartı</td>
+          </tr>
+          <tr>
+            <td>HWID Spoofer</td>
+            <td>Onetime / Lifetime</td>
+            <td>750TL / 2000TL</td>
+            <td>Papara, Havale/EFT, Kredi Kartı</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="muted" style="margin-top:8px">Fiyatlar bölgeye göre değişebilir. Güncel rakamlar için Discord'a katılın.</p>
+    </section>
+
+    <!-- WHY US -->
+    <section class="section">
+      <h2>Neden Rose?</h2>
+      <div class="grid" style="grid-template-columns:repeat(3,1fr)">
+        <div class="card">
+          <h3>Hızlı Kurulum</h3>
+          <p class="muted">Adım adım rehber ve video içerikleri ile dakikalar içinde kur.</p>
+        </div>
+        <div class="card">
+          <h3>Aktif Topluluk</h3>
+          <p class="muted">Sorularına hızlı yanıt veren bir Discord topluluğu.</p>
+        </div>
+        <div class="card">
+          <h3>Şeffaf Güncellemeler</h3>
+          <p class="muted">Değişiklik günlüğü ve durum paylaşımları.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <h2>Sık Sorulan Sorular</h2>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <strong>Kurulum ve destek nasıl işliyor?</strong>
+          <span>▶</span>
+        </div>
+        <div class="faq-a" style="display:none;margin-top:10px" class="muted">
+          Satın alma sonrası Discord üzerinden kurulum kılavuzu ve destek sağlanır. Ekip 7/24 hizmet vermektedir.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <strong>Güncellemeler ne sıklıkla geliyor?</strong>
+          <span>▶</span>
+        </div>
+        <div class="faq-a" style="display:none;margin-top:10px" class="muted">
+          Değişiklikler mümkün olduğunca kısa sürede duyurulur. Durum bilgisi ana sayfada paylaşılır.
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <strong>İade / değiştirme politikası nedir?</strong>
+          <span>▶</span>
+        </div>
+        <div class="faq-a" style="display:none;margin-top:10px" class="muted">
+          Dijital ürünlerde iade koşulları sınırlıdır. Lütfen satın almadan önce Discord üzerinden detayları okuyun ve onaylayın.
+        </div>
+      </div>
+    </section>
+
+    <!-- TOS -->
+    <section id="tos" class="section">
+      <h2>Kullanım Koşulları & Sorumluluk Reddi</h2>
+      <div class="callout">
+        <ul style="margin:0;padding-left:18px">
+          <li>Bu sayfa bilgi amaçlıdır; üçüncü taraf oyun geliştiricileri ile bir bağ bulunmamaktadır.</li>
+          <li>Kullanım yerel mevzuat, oyun şartları ve topluluk kuralları kapsamında kullanıcının sorumluluğundadır.</li>
+          <li>Hizmetler zamana bağlı ve değişkendir; erişim ve uyumluluk garanti edilmez.</li>
+          <li>Satın almadan önce güncel koşulları Discord üzerinden okuyup onaylayın.</li>
+        </ul>
